@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name My_Components)(type KiCad)(uri ${KIPRJMOD}/custom_libraries/skiselev_my_kicad_library/My_Components.pretty)(options "")(descr ""))
+)
