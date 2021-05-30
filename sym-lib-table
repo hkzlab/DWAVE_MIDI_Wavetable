@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name MIDI)(type Legacy)(uri ${KIPRJMOD}/custom_libraries/symbols/MIDI.lib)(options "")(descr ""))
+  (lib (name my_components)(type Legacy)(uri ${KIPRJMOD}/custom_libraries/skiselev_my_kicad_library/library/my_components.lib)(options "")(descr ""))
 )
