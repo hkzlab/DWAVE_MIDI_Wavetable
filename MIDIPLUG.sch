@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "MIDI-STICK"
 Date ""
-Rev ""
+Rev "0.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -867,7 +867,7 @@ U 1 1 60C98AC8
 P 10250 1300
 F 0 "P1" H 9872 1351 50  0000 R CNN
 F 1 "LINE OUT" H 9872 1260 50  0000 R CNN
-F 2 "My_Components:Conn_Audio_3.5mm_Stereo_SJ1-352XNG" H 10400 1450 50  0000 C CNN
+F 2 "My_Components:Conn_Audio_3.5mm_Stereo_SJ1-352XNG" H 10400 1450 50  0001 C CNN
 F 3 "" H 10400 1450 50  0000 C CNN
 	1    10250 1300
 	-1   0    0    -1  
@@ -1057,34 +1057,4 @@ F 3 "~" H 6350 3700 50  0001 C CNN
 	1    6350 3700
 	1    0    0    -1  
 $EndComp
-Connection ~ 1950 2550
-Connection ~ 1950 3150
-Wire Wire Line
-	1950 2550 2300 2550
-Connection ~ 2300 2550
-Wire Wire Line
-	2300 2750 2300 2550
-Wire Wire Line
-	2300 2550 2650 2550
-Wire Wire Line
-	2650 2550 3000 2550
-Connection ~ 2650 2550
-Wire Wire Line
-	2650 2750 2650 2550
-Wire Wire Line
-	3000 2550 3000 2750
-Wire Wire Line
-	1950 3150 2300 3150
-Connection ~ 2300 3150
-Wire Wire Line
-	2300 2950 2300 3150
-Wire Wire Line
-	2300 3150 2650 3150
-Wire Wire Line
-	2650 3150 3000 3150
-Connection ~ 2650 3150
-Wire Wire Line
-	2650 2950 2650 3150
-Wire Wire Line
-	3000 3150 3000 2950
 $EndSCHEMATC
