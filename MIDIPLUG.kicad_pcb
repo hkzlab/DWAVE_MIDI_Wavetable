@@ -757,7 +757,7 @@
     (path /60D544D5)
     (attr smd)
     (fp_text reference J1 (at -9.831 -3.06 180) (layer F.SilkS)
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_text value "Joystick Port" (at 0 16.69) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
