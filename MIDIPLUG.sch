@@ -1121,4 +1121,23 @@ Wire Wire Line
 	1700 4350 2150 4350
 Wire Wire Line
 	7200 1250 6750 1250
+$Comp
+L Device:C_Small C21
+U 1 1 6110D341
+P 900 2850
+F 0 "C21" H 950 2750 50  0000 L CNN
+F 1 "100nF" H 950 2950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 900 2850 50  0001 C CNN
+F 3 "~" H 900 2850 50  0001 C CNN
+	1    900  2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 3150 900  3150
+Wire Wire Line
+	900  3150 900  2950
+Wire Wire Line
+	900  2750 900  2550
+Wire Wire Line
+	900  2550 1250 2550
 $EndSCHEMATC
