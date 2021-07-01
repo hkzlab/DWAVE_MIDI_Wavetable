@@ -390,7 +390,7 @@ L Device:C_Small C6
 U 1 1 60B63E1E
 P 5750 3600
 F 0 "C6" H 5800 3700 50  0000 L CNN
-F 1 "1uF" H 5800 3500 50  0000 L CNN
+F 1 "100nF" H 5800 3500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5750 3600 50  0001 C CNN
 F 3 "~" H 5750 3600 50  0001 C CNN
 	1    5750 3600
@@ -844,12 +844,12 @@ F 3 "~" H 6600 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_GND3_Small Y1
+L Device:Crystal_Small Y1
 U 1 1 60B4BC85
 P 6350 3700
 F 0 "Y1" H 6200 3750 50  0000 C CNN
 F 1 "12Mhz" H 6350 3800 50  0000 C CNN
-F 2 "Crystal:Crystal_AT310_D3.0mm_L10.0mm_Horizontal_1EP_style2" H 6350 3700 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 6350 3700 50  0001 C CNN
 F 3 "~" H 6350 3700 50  0001 C CNN
 	1    6350 3700
 	1    0    0    -1  
@@ -889,10 +889,10 @@ Wire Wire Line
 Wire Wire Line
 	1200 4750 950  4750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 60E4C0FD
 P 950 5500
-F 0 "#PWR?" H 950 5250 50  0001 C CNN
+F 0 "#PWR0112" H 950 5250 50  0001 C CNN
 F 1 "GND" H 955 5327 50  0000 C CNN
 F 2 "" H 950 5500 50  0001 C CNN
 F 3 "" H 950 5500 50  0001 C CNN
@@ -924,10 +924,10 @@ NoConn ~ 1200 5250
 NoConn ~ 1200 5350
 NoConn ~ 1200 5450
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0123
 U 1 1 60EB263F
 P 2200 4000
-F 0 "#PWR?" H 2200 3850 50  0001 C CNN
+F 0 "#PWR0123" H 2200 3850 50  0001 C CNN
 F 1 "VCC" H 2215 4173 50  0000 C CNN
 F 2 "" H 2200 4000 50  0001 C CNN
 F 3 "" H 2200 4000 50  0001 C CNN
@@ -968,16 +968,16 @@ U 7 1 60F4BBB7
 P 1450 6550
 F 0 "U3" H 1680 6596 50  0000 L CNN
 F 1 "4050" H 1680 6505 50  0000 L CNN
-F 2 "" H 1450 6550 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 1450 6550 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 1450 6550 50  0001 C CNN
 	7    1450 6550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0124
 U 1 1 60F4E14F
 P 1450 7150
-F 0 "#PWR?" H 1450 6900 50  0001 C CNN
+F 0 "#PWR0124" H 1450 6900 50  0001 C CNN
 F 1 "GND" H 1455 6977 50  0000 C CNN
 F 2 "" H 1450 7150 50  0001 C CNN
 F 3 "" H 1450 7150 50  0001 C CNN
@@ -987,10 +987,10 @@ $EndComp
 Wire Wire Line
 	1450 7050 1450 7150
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0125
 U 1 1 60F57550
 P 1450 5950
-F 0 "#PWR?" H 1450 5800 50  0001 C CNN
+F 0 "#PWR0125" H 1450 5800 50  0001 C CNN
 F 1 "VDD" H 1465 6123 50  0000 C CNN
 F 2 "" H 1450 5950 50  0001 C CNN
 F 3 "" H 1450 5950 50  0001 C CNN
@@ -1005,13 +1005,11 @@ U 1 1 60F60792
 P 5250 3400
 F 0 "U3" H 5250 3717 50  0000 C CNN
 F 1 "4050" H 5250 3626 50  0000 C CNN
-F 2 "" H 5250 3400 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5250 3400 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 5250 3400 50  0001 C CNN
 	1    5250 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6350 3800 6350 4250
 Wire Wire Line
 	4950 3400 4350 3400
 Text Label 4350 3400 0    50   ~ 0
@@ -1027,7 +1025,7 @@ U 2 1 60FBD627
 P 6450 1250
 F 0 "U3" H 6150 1350 50  0000 C CNN
 F 1 "4050" H 6700 1350 50  0000 C CNN
-F 2 "" H 6450 1250 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6450 1250 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 6450 1250 50  0001 C CNN
 	2    6450 1250
 	1    0    0    -1  
@@ -1035,84 +1033,84 @@ $EndComp
 $Comp
 L 4xxx:4050 U3
 U 3 1 60FC0EC4
-P 3000 6300
-F 0 "U3" H 2700 6400 50  0000 C CNN
-F 1 "4050" H 3250 6400 50  0000 C CNN
-F 2 "" H 3000 6300 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 3000 6300 50  0001 C CNN
-	3    3000 6300
+P 2900 5950
+F 0 "U3" H 2600 6050 50  0000 C CNN
+F 1 "4050" H 3150 6050 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2900 5950 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 2900 5950 50  0001 C CNN
+	3    2900 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:4050 U3
 U 4 1 60FC1C01
-P 3000 6650
-F 0 "U3" H 2700 6750 50  0000 C CNN
-F 1 "4050" H 3250 6750 50  0000 C CNN
-F 2 "" H 3000 6650 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 3000 6650 50  0001 C CNN
-F 4 "" H 3000 6650 50  0001 C CNN "Field4"
-	4    3000 6650
+P 2900 6300
+F 0 "U3" H 2600 6400 50  0000 C CNN
+F 1 "4050" H 3150 6400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2900 6300 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 2900 6300 50  0001 C CNN
+F 4 "" H 2900 6300 50  0001 C CNN "Field4"
+	4    2900 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:4050 U3
 U 5 1 60FC2D06
-P 3000 7000
-F 0 "U3" H 2700 7100 50  0000 C CNN
-F 1 "4050" H 3250 7100 50  0000 C CNN
-F 2 "" H 3000 7000 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 3000 7000 50  0001 C CNN
-F 4 "" H 3000 7000 50  0001 C CNN "Field4"
-	5    3000 7000
+P 2900 6650
+F 0 "U3" H 2600 6750 50  0000 C CNN
+F 1 "4050" H 3150 6750 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2900 6650 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 2900 6650 50  0001 C CNN
+F 4 "" H 2900 6650 50  0001 C CNN "Field4"
+	5    2900 6650
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:4050 U3
 U 6 1 60FC387B
-P 3000 7350
-F 0 "U3" H 2700 7450 50  0000 C CNN
-F 1 "4050" H 3250 7450 50  0000 C CNN
-F 2 "" H 3000 7350 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 3000 7350 50  0001 C CNN
-F 4 "" H 3000 7350 50  0001 C CNN "Field4"
-	6    3000 7350
+P 2900 7000
+F 0 "U3" H 2600 7100 50  0000 C CNN
+F 1 "4050" H 3150 7100 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2900 7000 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" H 2900 7000 50  0001 C CNN
+F 4 "" H 2900 7000 50  0001 C CNN "Field4"
+	6    2900 7000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0126
 U 1 1 60FCE3E9
-P 2500 7450
-F 0 "#PWR?" H 2500 7200 50  0001 C CNN
-F 1 "GND" H 2505 7277 50  0000 C CNN
-F 2 "" H 2500 7450 50  0001 C CNN
-F 3 "" H 2500 7450 50  0001 C CNN
-	1    2500 7450
+P 2400 7100
+F 0 "#PWR0126" H 2400 6850 50  0001 C CNN
+F 1 "GND" H 2405 6927 50  0000 C CNN
+F 2 "" H 2400 7100 50  0001 C CNN
+F 3 "" H 2400 7100 50  0001 C CNN
+	1    2400 7100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 6300 2500 6300
+	2600 5950 2400 5950
 Wire Wire Line
-	2500 6300 2500 6650
+	2400 5950 2400 6300
 Wire Wire Line
-	2700 6650 2500 6650
-Connection ~ 2500 6650
+	2600 6300 2400 6300
+Connection ~ 2400 6300
 Wire Wire Line
-	2500 6650 2500 7000
+	2400 6300 2400 6650
 Wire Wire Line
-	2700 7000 2500 7000
-Connection ~ 2500 7000
+	2600 6650 2400 6650
+Connection ~ 2400 6650
 Wire Wire Line
-	2500 7000 2500 7350
+	2400 6650 2400 7000
 Wire Wire Line
-	2700 7350 2500 7350
-Connection ~ 2500 7350
+	2600 7000 2400 7000
+Connection ~ 2400 7000
 Wire Wire Line
-	2500 7350 2500 7450
-NoConn ~ 3300 6300
-NoConn ~ 3300 6650
-NoConn ~ 3300 7000
-NoConn ~ 3300 7350
+	2400 7000 2400 7100
+NoConn ~ 3200 5950
+NoConn ~ 3200 6300
+NoConn ~ 3200 6650
+NoConn ~ 3200 7000
 Wire Wire Line
 	1700 4450 2200 4450
 Wire Wire Line
